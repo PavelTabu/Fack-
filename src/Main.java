@@ -4,19 +4,29 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("вот тут шо-нибудь введи (цифру):");
-        Scanner sc = new Scanner(System.in);
-        int choise = sc.nextInt();  // смотрит, шо ты ввёл в консоль
 
-        if (choise == 1) {
-            System.out.println("option 1");
-        }
-        else if (choise == 2) {
-            System.out.println("option 2");
-        }
-        else {
-            System.out.printf("Operation is not supported");
-        }
+        int i = 5;
+        int a[] = new int[i];
+        a[0] = 2;
+        a[1] = 0;
+        a[2] = 0;
+        a[3] = 0;
+        a[4] = 9;
+        int counter = 0;
+        for (i = 0; i < 5; i++) {
+            {
+                switch (a[i]) {
+                    case (0):
+                        ++counter;
+                        System.out.println(counter);
+                }
+            }
 
+
+        }
     }
 }
+
+
+
+
