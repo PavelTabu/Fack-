@@ -2,28 +2,31 @@ public class Main {
 
 
     public static void main(String[] args) {
+        int e[] = new int[5];
+        e[0] = 0;
+        e[1] = 0;
+        e[2] = 4;
+        e[3] = 0;
+        e[4] = 9;
+        int count = 0;
+        for (int i : e) {
+            if (i == 0) ++count;  }
 
-        int i = 5;
-        int a[] = new int[i];
-        a[0] = 2;
-        a[1] = 0;
-        a[2] = 0;
-        a[3] = 0;
-        a[4] = 9;
-        int counter = 0;
-        for (i = 0; i < 5; i++) {
-            {
-                switch (a[i]) {
-                    case (0):
-                        ++counter;
-                        System.out.println(counter);
-                }
+
+                System.out.println(count);
+
+
             }
 
 
         }
-    }
-}
+
+
+
+
+
+
+
 
 
 
